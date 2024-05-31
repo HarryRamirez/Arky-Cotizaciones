@@ -1,0 +1,52 @@
+
+
+
+.cont_btn{
+    justify-content: center;
+}
+
+.cant_porc{
+    width: 4%;
+}
+.other_td{
+    width: 23%;
+}
+.other_td_desc{
+    width: 25%;
+}
+.accion{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4px;
+    a{
+        width: 25px;
+        text-align: center;
+        border-radius: 3px;
+    }
+    img{
+        margin-bottom: 4px;
+    }
+}
+
+
+
+.cont_resul{
+    justify-content: end;
+}
+
+.table_resul{
+    width: 25%;
+    td{
+        width: 50%;
+    }
+    .desc{
+        padding-top: 14px;
+        color: #ff0000;
+    }
+}
+
+
+.cont_btn_cot{
+    justify-content: end;
+}
+

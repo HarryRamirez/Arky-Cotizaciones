@@ -1,0 +1,87 @@
+<div class=" cont_quotation container-md">
+    <div class="title text-center mb-3">
+        <h4>Cotizaciones</h4>
+    </div>
+
+    <section class="button d-flex row">
+        <div class="col-sm-6 ">
+        <button type="button" class="btn btn-primary" routerLink="/dashboard/quotation">Consultar Cotizacion</button>
+        </div>
+
+    </section>
+    <form class="row" action="">
+    <section class="container-md bg-body-tertiary col-sm-12">
+       <div class=" quot d-flex ">
+        <div class="cont">
+            <label for="input" class="form-label">Remitente:</label>
+            <input class="form-control mb-3" type="text"  aria-label="default input example">
+
+            @if (!isChecked()) {
+            <label for="input" class="form-label">Cliente:</label>
+            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Escribe para buscar...">
+            <datalist id="datalistOptions">
+              <option value="San Francisco">
+              <option value="New York">
+              <option value="Seattle">
+              <option value="Los Angeles">
+              <option value="Chicago">
+            </datalist>
+                                }
+
+            @if(isChecked()){
+            <div>
+                <label for="input" class="form-label">Cliente:</label>
+                <input class="form-control mb-3" type="text"  aria-label="default input example">
+                <label for="input" class="form-label">Rut:</label>
+                <input class="form-control mb-3" type="text"  aria-label="default input example">
+                <label for="input" class="form-label">Telefono:</label>
+                <input class="form-control mb-3" type="text"  aria-label="default input example">
+                <label for="input" class="form-label">Correo:</label>
+                <input class="form-control mb-3" type="email"  aria-label="default input example">
+           </div>
+                                                 }       
+        </div>
+
+        <div class="cont">
+            <label for="input" class="form-label">Fecha Emision:</label>
+            <input class="form-control mb-3" type="date"  aria-label="default input example">
+            <label for="exampleFormControlTextarea1" class="form-label">Fecha Evento:</label>
+            <input class="form-control mb-2" type="date"  aria-label="default input example">
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" (click)="cambiar()" >
+                <label class="form-check-label" for="flexCheckDefault">
+                Agregar Cliente
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                Exento de Iva
+                </label>
+            </div>
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                Solo Valor Total
+                </label>
+            </div>
+
+            <label for="input" class="form-label">Referencia:</label>
+            <input class="form-control mb-3" type="text"  aria-label="default input example">
+        </div>
+
+        </div>
+
+    </section>
+
+ 
+
+    <section >
+        <app-item-quot></app-item-quot>
+    </section>
+
+
+    </form>   
+</div>
+

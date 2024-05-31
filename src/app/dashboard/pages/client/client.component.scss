@@ -1,0 +1,60 @@
+.cont_client{
+    margin-top: 145px;
+}
+
+
+.button{
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+
+.accion{
+    display: flex;
+    justify-content: space-between;
+    a{
+        width: 25px;
+        text-align: center;
+        border-radius: 3px;
+    }
+    img{
+        margin-bottom: 4px;
+    }
+}
+
+.pagi{
+    justify-content: end;
+}
+
+.modal_look{
+    margin-bottom: 5px;
+    h5{
+        font-weight: normal;
+    }
+    span{
+        font-weight: bold;
+    }
+}
+
+.modal_delete{
+
+    img{
+        width: 100px;
+    }
+    .button{
+        color: #fff;
+    }
+}
+
+
+
+.modal_update form {
+      justify-content: space-between;
+}
+
+form .cont{
+    width: 45%;
+}
+.cont_btn{
+    justify-content: end;
+}
