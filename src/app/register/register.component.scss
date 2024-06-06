@@ -2,7 +2,9 @@
     width: 300px;
   }
 
-  
+  .row{
+    margin-top: -15px;
+  }
 
   .cont_input{
     display: flex;
@@ -17,6 +19,7 @@
   }
   
   .cont_btn .btn{
+    margin-top: -10px;
     width: 150px;
     background-color:#1d65a3;
   
